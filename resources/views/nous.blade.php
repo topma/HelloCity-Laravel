@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Hello City</title>
+        <title>A Propos de Nous|Hello City</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,10 +16,12 @@
     </head>
     <body >
         
-        <h1> Hello City!</h1>
+        <h1> Qui Sommes Nous !</h1>
         
         <p>L'Heure actuellement est : {{date('H:i')}}.</p>
         
+        
+        <p><a href="/">Retour page Accueil</a></p>
         
         
         <footer>
