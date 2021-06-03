@@ -22,8 +22,10 @@
         
         <footer>
             <p>&copy; Copyright {{date('Y')}} &middot; 
-                @yield('links')
                 
+                @if(! Route::is('nous'))
+<a href="{{ route('nous') }}">Qui Sommes Nous</a>
+@endif
             
             </p>
             
