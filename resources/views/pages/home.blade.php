@@ -14,5 +14,5 @@
 @endsection
 
 @section('links')
-<a href="/quinous">Qui Sommes Nous</a>
+<a href="{{ route('nous') }}">Qui Sommes Nous</a>
 @endsection

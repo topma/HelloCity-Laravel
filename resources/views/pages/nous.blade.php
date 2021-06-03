@@ -12,7 +12,7 @@
         <p>L'Heure actuellement est : {{date('H:i')}}.</p>
         
         
-        <p><a href="/">Retour page Accueil</a></p>
+        <p><a href="{{ route('home') }}">Retour page Accueil</a></p>
         
       
 @endsection
