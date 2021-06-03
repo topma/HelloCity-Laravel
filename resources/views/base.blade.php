@@ -7,24 +7,28 @@
         <title>@yield('title', config('app.name'))</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        
 
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         <!-- Styles -->
         
 
         
     </head>
-    <body >
+    <body class="py-6 flex flex-col justify-between items-center min-h-screen">
+        <main role='main' class="flex flex-col items-center justify-center">
+            
+          @yield('content')
         
-        @yield('content')
+        {{config('project.slogan')}}  
+        </main>
         
-        {{config('project.slogan')}}
         
         <footer>
-            <p>&copy; Copyright {{date('Y')}} &middot; 
+            <p class="text-gray-400">&copy; Copyright {{date('Y')}} &middot; 
                 
                 @if(! Route::is('nous'))
-<a href="{{ route('nous') }}">Qui Sommes Nous</a>
+                <a href="{{ route('nous') }}" class="text-indigo-500 hover:text-indigo-600 underline">Qui Sommes Nous</a>
 @endif
             
             </p>
